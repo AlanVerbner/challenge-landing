@@ -10,11 +10,20 @@
   },
   "devDependencies": {
     "@11ty/eleventy": "^2.0.1",
+    "cssnano": "^6.0.2",
     "postcss": "^8.4.31",
-    "postcss-cli": "^11.0.0",
-    "cssnano": "^6.0.2"
+    "postcss-cli": "^11.0.0"
   },
-  "keywords": ["terminal", "retro", "minitel", "1980s", "static-site"],
+  "keywords": [
+    "terminal",
+    "retro",
+    "minitel",
+    "1980s",
+    "static-site"
+  ],
   "author": "Walter the Robot",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "tuicss": "^2.1.2"
+  }
 }

@@ -2,6 +2,9 @@
 module.exports = function(eleventyConfig) {
   // Passthrough copy
   eleventyConfig.addPassthroughCopy("src/assets");
+  
+  // Copy fonts from TuiCss
+  eleventyConfig.addPassthroughCopy({"node_modules/tuicss/dist/fonts": "assets/fonts"});
 
   return {
     dir: {

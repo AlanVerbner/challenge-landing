@@ -7,12 +7,12 @@ permalink: /instructions/
   <section id="instructions">
     <h1>Mission Instructions</h1>
     
-    <div class="mission-objective">
+    <div class="tui-panel">
       <h2>Objective</h2>
       <p>Your mission is to infiltrate the MiniTel-Lite network and retrieve the emergency override codes from the JOSHUA system. Follow these steps precisely - any deviation could trigger the AI's defensive protocols.</p>
     </div>
 
-    <div class="mission-steps">
+    <div class="tui-panel">
       <h2>Procedure</h2>
       <ol>
         <li><strong>Terminal Connection:</strong><br>
@@ -31,19 +31,19 @@ permalink: /instructions/
       </ol>
     </div>
 
-    <div class="transmission-form">
-      <h2>Override Code Transmission</h2>
+    <div class="tui-fieldset">
+      <legend>Override Code Transmission</legend>
       <form action="{{ site.form_endpoint }}" method="POST">
         <label for="secret">Secret Override Code:</label>
-        <input type="text" id="secret" name="secret" required placeholder="Enter retrieved code here..." autocomplete="off">
+        <input type="text" id="secret" name="secret" required placeholder="Enter retrieved code here..." autocomplete="off" class="tui-input">
         <div class="form-help">
           <small>Code must be at least 8 characters. Transmitted via secure channel.</small>
         </div>
-        <button type="submit">TRANSMIT TO NORAD</button>
+        <button type="submit" class="tui-button">TRANSMIT TO NORAD</button>
       </form>
     </div>
 
-    <div class="network-diagram">
+    <div class="tui-panel">
       <h2>Network Topology</h2>
       <pre>
     ┌─────────────────┐    ┌─────────────────┐    ┌─────────────────┐
@@ -65,7 +65,7 @@ permalink: /instructions/
       </pre>
     </div>
 
-    <div class="mission-notes">
+    <div class="tui-panel">
       <h2>Important Notes</h2>
       <ul>
         <li>Connection is established via TCP on port 7321</li>
@@ -76,7 +76,7 @@ permalink: /instructions/
       </ul>
     </div>
 
-    <div class="emergency-contacts">
+    <div class="security-notice">
       <h2>Emergency Contacts</h2>
       <p>If connection fails, contact NORAD Command immediately:</p>
       <ul>

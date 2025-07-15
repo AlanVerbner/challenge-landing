@@ -1,10 +1,11 @@
 
 <header>
-  <div class="container">
-    <nav>
-      <a href="/" {% if page.url == '/' %}class="active"{% endif %}>[MAIN]</a>
-      <a href="/instructions/" {% if page.url == '/instructions/' %}class="active"{% endif %}>[INSTRUCTIONS]</a>
-      <a href="/faq/" {% if page.url == '/faq/' %}class="active"{% endif %}>[FAQ]</a>
-    </nav>
+  <div class="tui-tabs">
+    <ul>
+      <li><a class="tui-tab{% if title == 'Main' %} active{% endif %}" href="/">Main</a></li>
+      <li><a class="tui-tab{% if title == 'Instructions' %} active{% endif %}" href="/instructions/">Instructions</a></li>
+      <li><a class="tui-tab{% if title == 'Protocol' %} active{% endif %}" href="/protocol/">Protocol</a></li>
+      <li><a class="tui-tab{% if title == 'FAQ' %} active{% endif %}" href="/faq/">FAQ</a></li>
+    </ul>
   </div>
 </header>

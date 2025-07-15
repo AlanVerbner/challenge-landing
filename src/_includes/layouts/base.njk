@@ -1,20 +1,31 @@
-
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>{{ site.title }}</title>
-  <link rel="stylesheet" href="/assets/css/tuicss.min.css">
-  <link rel="stylesheet" href="/assets/css/terminal.css">
-</head>
-<body>
-  <a href="#main-content" class="skip-link">Skip to content</a>
-  {% include "partials/header.njk" %}
-  <main id="main-content">
-    {{ content | safe }}
-  </main>
-  {% include "partials/footer.njk" %}
-  <script src="/assets/js/terminal.js"></script>
-</body>
+<html lang="en" style="background: black">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{{ site.title }}</title>
+    <link rel="stylesheet" href="/assets/css/tuicss.min.css" />
+  </head>
+  <body class="tui-bg-blue-black">
+    <div class="tui-screen-1024-768 bordered white-168 centered">
+      <div
+        class="tui-panel cyan-168 full-width black-255-text tui-no-shadow center"
+      >
+        {{ site.title }}
+      </div>
+
+      {% include "partials/header.njk" %}
+
+      <div class="tui-tab-content tui-content" style="display: block">
+        <div class="container">
+          <section class="main-content">
+            <br />
+            {{ content | safe }}
+          </section>
+        </div>
+      </div>
+
+      {% include "partials/footer.njk" %}
+    </div>
+  </body>
 </html>

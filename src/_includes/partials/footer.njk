@@ -1,4 +1,18 @@
 
-<footer>
-  <p>&copy; 2024 MiniTel-Lite. All rights reserved.</p>
-</footer>
+<div class="tui-statusbar absolute cyan-168">
+  <ul>
+    <li class="tui-datetime" id="current-time"></li>
+  </ul>
+</div>
+
+<script>
+  function updateTime() {
+    const now = new Date();
+    const timeString = now.toLocaleTimeString();
+    document.getElementById('current-time').textContent = timeString;
+  }
+  
+  // Update time immediately and then every second
+  updateTime();
+  setInterval(updateTime, 1000);
+</script>

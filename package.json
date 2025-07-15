@@ -1,0 +1,20 @@
+{
+  "name": "code-override-terminal",
+  "version": "1.0.0",
+  "description": "MiniTel-Lite CODE: OVERRIDE Terminal Website",
+  "main": "index.js",
+  "scripts": {
+    "start": "eleventy --serve",
+    "build": "eleventy",
+    "build:prod": "NODE_ENV=production eleventy"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^2.0.1",
+    "postcss": "^8.4.31",
+    "postcss-cli": "^11.0.0",
+    "cssnano": "^6.0.2"
+  },
+  "keywords": ["terminal", "retro", "minitel", "1980s", "static-site"],
+  "author": "Walter the Robot",
+  "license": "MIT"
+}

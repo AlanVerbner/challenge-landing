@@ -1,0 +1,457 @@
+:root {
+  --background-color: #000000;
+  --foreground-color: #33FF33;
+  --font-family: 'IBM VGA 8x16', 'Courier New', Courier, monospace;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--foreground-color);
+  font-family: var(--font-family);
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+/* CRT Effects */
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: repeating-linear-gradient(
+    0deg,
+    transparent,
+    transparent 2px,
+    rgba(51, 255, 51, 0.03) 2px,
+    rgba(51, 255, 51, 0.03) 4px
+  );
+  pointer-events: none;
+  z-index: 1000;
+}
+
+/* Caret */
+.caret {
+  display: inline-block;
+  width: 8px;
+  height: 16px;
+  background-color: var(--foreground-color);
+  margin-left: 2px;
+}
+
+/* Navigation */
+header {
+  background-color: var(--foreground-color);
+  color: var(--background-color);
+  padding: 0.5rem 1rem;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  border-bottom: 1px solid var(--foreground-color);
+}
+
+nav {
+  max-width: 960px;
+  margin: 0 auto;
+  display: flex;
+  gap: 1rem;
+}
+
+nav a {
+  color: var(--background-color);
+  text-decoration: none;
+  padding: 0.25rem 0.5rem;
+  border: 1px solid transparent;
+}
+
+nav a:hover,
+nav a:focus {
+  background-color: var(--background-color);
+  color: var(--foreground-color);
+  border: 1px solid var(--foreground-color);
+}
+
+nav a.active {
+  background-color: var(--background-color);
+  color: var(--foreground-color);
+  border: 1px solid var(--foreground-color);
+}
+
+/* Main content */
+main {
+  min-height: calc(100vh - 3rem);
+  padding: 2rem 0;
+}
+
+/* Typography */
+h1, h2, h3 {
+  color: var(--foreground-color);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+/* Typewriter effect */
+.typewriter {
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+/* Forms */
+form {
+  background-color: rgba(51, 255, 51, 0.1);
+  border: 1px solid var(--foreground-color);
+  padding: 1rem;
+  margin: 1rem 0;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+}
+
+input[type="text"] {
+  background-color: var(--background-color);
+  color: var(--foreground-color);
+  border: 1px solid var(--foreground-color);
+  padding: 0.5rem;
+  font-family: var(--font-family);
+  font-size: 1rem;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+input[type="text"]:focus {
+  outline: none;
+  box-shadow: 0 0 5px var(--foreground-color);
+}
+
+button {
+  background-color: var(--foreground-color);
+  color: var(--background-color);
+  border: none;
+  padding: 0.5rem 1rem;
+  font-family: var(--font-family);
+  font-size: 1rem;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+button:hover,
+button:focus {
+  background-color: var(--background-color);
+  color: var(--foreground-color);
+  border: 1px solid var(--foreground-color);
+}
+
+/* Links */
+a {
+  color: var(--foreground-color);
+  text-decoration: underline;
+}
+
+a:hover,
+a:focus {
+  background-color: var(--foreground-color);
+  color: var(--background-color);
+  text-decoration: none;
+}
+
+/* Code blocks */
+pre, code {
+  background-color: rgba(51, 255, 51, 0.1);
+  border: 1px solid var(--foreground-color);
+  padding: 1rem;
+  font-family: var(--font-family);
+  overflow-x: auto;
+  white-space: pre;
+}
+
+/* Skip link */
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 6px;
+  background: var(--foreground-color);
+  color: var(--background-color);
+  padding: 8px;
+  text-decoration: none;
+  z-index: 1001;
+}
+
+.skip-link:focus {
+  top: 6px;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 2rem;
+  border-top: 1px solid var(--foreground-color);
+  margin-top: 2rem;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+  
+  nav {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .container {
+    padding: 0.5rem;
+  }
+  
+  h1 {
+    font-size: 1.5rem;
+  }
+}
+
+/* Accessibility */
+@media (prefers-reduced-motion: reduce) {
+  .scanline,
+  .caret,
+  .typewriter {
+    animation: none;
+  }
+  
+  .typewriter {
+    border-right: none;
+  }
+}
+
+/* Boot sequence */
+.boot-sequence {
+  font-family: var(--font-family);
+  white-space: pre;
+  opacity: 1;
+}
+
+.boot-line {
+  opacity: 1;
+}
+
+/* Mission button */
+.mission-button {
+  display: inline-block;
+  padding: 1rem 2rem;
+  background-color: var(--background-color);
+  color: var(--foreground-color);
+  border: 2px solid var(--foreground-color);
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-top: 2rem;
+}
+
+.mission-button:hover {
+  background-color: var(--foreground-color);
+  color: var(--background-color);
+}
+
+/* Press any key prompt */
+.press-key {
+  text-align: center;
+  margin: 2rem 0;
+  font-size: 1.2rem;
+}
+
+/* FAQ styling */
+.faq-list dt {
+  font-weight: bold;
+  margin-top: 1.5rem;
+  padding: 0.5rem;
+  background-color: rgba(51, 255, 51, 0.1);
+  border-left: 3px solid var(--foreground-color);
+}
+
+.faq-list dd {
+  margin: 0.5rem 0 1rem 1rem;
+  padding: 0.5rem;
+  border-left: 1px solid rgba(51, 255, 51, 0.3);
+}
+
+.faq-list a {
+  color: var(--foreground-color);
+  text-decoration: none;
+}
+
+.faq-list a:hover {
+  text-decoration: underline;
+}
+
+/* Instructions page styling */
+.mission-objective,
+.mission-steps,
+.transmission-form,
+.network-diagram,
+.mission-notes,
+.emergency-contacts {
+  margin: 2rem 0;
+  padding: 1rem;
+  border: 1px solid rgba(51, 255, 51, 0.3);
+  background-color: rgba(51, 255, 51, 0.05);
+}
+
+.mission-objective h2,
+.mission-steps h2,
+.transmission-form h2,
+.network-diagram h2,
+.mission-notes h2,
+.emergency-contacts h2 {
+  color: var(--foreground-color);
+  border-bottom: 1px solid var(--foreground-color);
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.form-help {
+  margin-bottom: 1rem;
+  color: rgba(51, 255, 51, 0.8);
+  font-size: 0.9rem;
+}
+
+/* Lore section */
+.lore-section {
+  margin: 2rem 0;
+  padding: 1.5rem;
+  background-color: rgba(51, 255, 51, 0.05);
+  border: 1px solid rgba(51, 255, 51, 0.3);
+  border-left: 4px solid var(--foreground-color);
+}
+
+.lore-section h2 {
+  color: var(--foreground-color);
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+/* Technical specifications */
+.technical-specifications,
+.troubleshooting,
+.security-notice {
+  margin: 2rem 0;
+  padding: 1rem;
+  background-color: rgba(51, 255, 51, 0.05);
+  border: 1px solid rgba(51, 255, 51, 0.3);
+}
+
+.security-notice {
+  border-color: #ff3333;
+  background-color: rgba(255, 51, 51, 0.1);
+}
+
+.security-notice p {
+  color: #ff6666;
+  font-weight: bold;
+}
+
+/* Mobile warning */
+.mobile-warning {
+  background-color: var(--background-color) !important;
+  border: 2px solid var(--foreground-color) !important;
+  color: var(--foreground-color) !important;
+}
+
+.mobile-warning button {
+  margin-top: 1rem;
+  background-color: var(--foreground-color);
+  color: var(--background-color);
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+/* Enhanced mobile responsiveness */
+@media (max-width: 480px) {
+  .container {
+    padding: 0.25rem;
+  }
+  
+  .lore-section,
+  .mission-objective,
+  .mission-steps,
+  .transmission-form,
+  .network-diagram,
+  .mission-notes,
+  .emergency-contacts {
+    padding: 0.75rem;
+    margin: 1rem 0;
+  }
+  
+  pre {
+    font-size: 0.7rem;
+    overflow-x: auto;
+  }
+  
+  .network-diagram pre {
+    font-size: 0.6rem;
+  }
+  
+  input[type="text"] {
+    font-size: 16px; /* Prevent zoom on iOS */
+  }
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+  :root {
+    --foreground-color: #ffffff;
+  }
+  
+  .scanline {
+    background: rgba(255, 255, 255, 0.5);
+  }
+  
+  body::before {
+    background: repeating-linear-gradient(
+      0deg,
+      transparent,
+      transparent 2px,
+      rgba(255, 255, 255, 0.1) 2px,
+      rgba(255, 255, 255, 0.1) 4px
+    );
+  }
+}
+
+/* Print styles */
+@media print {
+  .scanline,
+  .skip-animations,
+  .mobile-warning {
+    display: none !important;
+  }
+  
+  body {
+    background: white !important;
+    color: black !important;
+  }
+  
+  a {
+    color: black !important;
+  }
+}

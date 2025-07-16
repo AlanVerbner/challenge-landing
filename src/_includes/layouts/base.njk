@@ -17,11 +17,15 @@
       {% include "partials/header.njk" %}
 
       <div class="tui-tab-content tui-content" style="display: block">
-        <div class="container">
-          <section class="main-content">
-            <br />
-            {{ content | safe }}
-          </section>
+        <div
+          class="tui-window full-width tui-no-shadow"
+        >
+          <fieldset class="tui-fieldset">
+            <section class="main-content">
+              <!-- <br /> -->
+              {{ content | safe }}
+            </section>
+          </fieldset>
         </div>
       </div>
 

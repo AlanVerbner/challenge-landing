@@ -4,8 +4,6 @@ title: Instructions
 permalink: /instructions/
 ---
 
-<div class="tui-panel">
-  <div class="tui-panel-content">
     <h2>Objective</h2>
     <p>
       Your mission is to infiltrate the MiniTel-Lite network and
@@ -38,15 +36,12 @@ permalink: /instructions/
 
       <li>
         <strong>Winners:</strong><br />
-        The first [N] to submit the correct override code <b class="red-168 yellow-255-text">and the code is accepted by NORAD judges</b> will win.
+        The first {{ site.winner_amount }} to submit the correct override code <b class="red-168 yellow-255-text">and the code is accepted by NORAD judges</b> will win.
       </li>
     </ol>
-  </div>
-</div>
-<br />
-<br />
+
 <div class="center-align">
   <a href="{{ site.form_endpoint }}" class="tui-button">
     TRANSMIT TO NORAD
   </a>
-</div> 
+</div>

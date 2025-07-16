@@ -15,8 +15,6 @@ permalink: /
 </div>
 <br />
 <br />
-<div class="tui-panel">
-  <div class="tui-panel-content">
     <h2>Mission Brief</h2>
     <p>
       November 26, 1983. 15:42 GMT. NORAD's central computer systems
@@ -41,11 +39,8 @@ permalink: /
 
     <p>The fate of humanity depends on your success.</p>
     <p>Time is running out. The world needs you now.</p>
-  </div>
-</div>
 
-<br />
 <br />
 <div class="mission-start center-align" id="mission-start">
   <a href="/instructions/" class="tui-button">BEGIN MISSION</a>
-</div> 
+</div>

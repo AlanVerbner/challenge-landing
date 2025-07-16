@@ -4,7 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>{{ site.title }}</title>
-    <link rel="stylesheet" href="/assets/css/tuicss.min.css" />
+    <!-- Set base href for relative URLs -->
+    <base href="{{ site.baseUrl }}" />
+    <link rel="stylesheet" href="assets/css/tuicss.min.css" />
   </head>
   <body class="tui-bg-blue-black">
     <div class="tui-screen-1024-768 bordered white-168 centered">
@@ -17,9 +19,7 @@
       {% include "partials/header.njk" %}
 
       <div class="tui-tab-content tui-content" style="display: block">
-        <div
-          class="tui-window full-width tui-no-shadow"
-        >
+        <div class="tui-window full-width tui-no-shadow">
           <fieldset class="tui-fieldset">
             <section class="main-content">
               <!-- <br /> -->

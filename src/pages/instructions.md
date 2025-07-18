@@ -16,16 +16,18 @@ permalink: /instructions/
     <ol>
       <li>
         <strong>Terminal Connection:</strong><br />
+        We have noticed that when invoking twice to the DUMP command, the server will return the override code.
+        You must follow the protocol to retrieve the override code.
+        
         Develop an application that can connect to the MiniTel-Lite
-        server and authenticate using the HELLO protocol.
+        server and authenticate using the HELLO protocol. The, call the DUMP command twice to retrieve the override code.
+        
+        The server is locking down itself, so you might get disconnected without any reason. Handle such cases gracefully.
         <br />
-        <b class="red-168 yellow-255-text">You must use CODA tooling to develop the application.</b>
       </li>
-
       <li>
-        <strong>Authentication Protocol:</strong><br />
-        Send the Base64 encoded HELLO frame to authenticate and get
-        the override code back.
+        <strong>Coding Environment:</strong><br />
+        <b class="red-168 yellow-255-text">You must use CODA tooling to develop the application.</b>
       </li>
 
       <li>

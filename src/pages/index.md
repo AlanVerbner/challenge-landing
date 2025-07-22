@@ -42,7 +42,7 @@ permalink: /
 
 <br />
 <div class="mission-start center-align" id="mission-start">
-  <a href="/instructions/" class="tui-button">BEGIN MISSION</a>
+  <a href="instructions/" class="tui-button">BEGIN MISSION</a>
 </div>
 
 <!-- Implementation Override -->

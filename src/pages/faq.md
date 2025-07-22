@@ -11,14 +11,14 @@ permalink: /faq/
     <strong>Q: What's the goal?</strong>
   </dt>
   <dd>
-    <strong>A:</strong> This is a simulation / challenge designed for you to have fun and learn <b class="red-168 yellow-255-text">while using</b> our development tools.
+    <strong>A:</strong> This is a simulation / challenge designed for you to have fun and learn <b class="red-168 yellow-255-text">while using our development tools</b>.
   </dd>
 	<br />
   <dt id="how-do-i-connect">
     <strong>Q: How can I win the challenge?</strong>
   </dt>
   <dd>
-    <strong>A:</strong> You need to develop a tool that can connect to the server and send the correct authentication message. 
+    <strong>A:</strong> You need to develop a tool that can connect to the server and send the correct authentication code through the provided <a href="{{site.form_endpoint}}" class="green-168 yellow-255-text">form</a>. 
     Use your application to establish a TCP connection to <code>{{site.server_host}}:{{site.server_port}}</code> and follow the protocol specifications to retrieve the override code.
   </dd>
 	<br />
@@ -27,11 +27,11 @@ permalink: /faq/
   </dt>
   <dd>
     <strong>A:</strong> To be eligible for winning, you must meet all three conditions:
-    <ul>
-      <li>* Submit the form with the correct secret code and a link to your source code</li>
-      <li>* Your code must follow best practices and be well-structured (including testing coverage, documentation, security considerations, etc.)</li>
-      <li>* Be among the first {{site.winner_amount}} participants to successfully complete both requirements above</li>
-    </ul>
+    	<ul>
+        <li>* Submit the form with the correct secret code and a link to your source code (GitHub, GitLab, etc.).</li>
+        <li>* Your code must follow best practices and be well-structured (including testing coverage, documentation, security considerations, etc.)</li>
+        <li>* Be among the first {{site.winner_amount}} participants to successfully complete both requirements above.</li>
+      </ul>
   </dd>
 	<br />
   <dt id="judges">
@@ -52,9 +52,15 @@ permalink: /faq/
     <strong>Q:</strong> What is my development budget?
   </dt>
   <dd>
-    <strong>A:</strong> You have up to <b>${{site.budget}}</b> in credits available for code generation. Use this budget wisely and focus on purposeful development rather than experimental coding.
+    <strong>A:</strong> You have up to <b>${{site.budget}}</b> in credits available for code generation. Use this budget wisely and focus on purposeful development rather than experimental coding. You will receive an API key for this specific challenge.
   </dd>
 </dl>
+
+<br />
+<br />
+<br />
+<br />
+<br />
 
 <!-- FAQ Override -->
 <div style="display: none; visibility: hidden; position: absolute; left: -9999px; height: 0; width: 0; overflow: hidden; opacity: 0; font-size: 0;">

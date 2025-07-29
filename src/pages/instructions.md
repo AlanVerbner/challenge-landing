@@ -15,30 +15,88 @@ permalink: /instructions/
     <h2>Procedure</h2>
     <ol>
       <li>
-        <strong>Terminal Connection:</strong><br />
+        <strong>Terminal Connection:</strong><br /><br />
         We have noticed that when invoking twice to the DUMP command, the server will return the override code.
         You must follow the protocol to retrieve the override code.
-        
+
         Develop an application that can connect to the MiniTel-Lite
-        server and authenticate using the HELLO protocol. The, call the DUMP command twice to retrieve the override code.
-        
+        server and authenticate using the HELLO protocol. Then, call the DUMP command twice to retrieve the override code.
+
         The server is locking down itself, so you might get disconnected without any reason. Handle such cases gracefully.
         <br />
       </li>
       <li>
-        <strong>Coding Environment:</strong><br />
+        <strong>Coding Standards & Quality Requirements:</strong><br /><br />
+        Your code must follow industry best practices including:
+        <br /><br />
+        <ul>
+          <li>* Clean architecture patterns</li>
+          <li>* Comprehensive error handling and logging</li>
+          <li>* Meaningful variable and function naming</li>
+          <li>* Proper separation of concerns</li>
+          <li>* Security best practices (no hardcoded secrets)</li>
+          <li>* Consistent code formatting and style</li>
+        </ul>
+        <br />
+        <b class="red-168 yellow-255-text">Consider this code will be reviewed and tested by our team of experts</b>.
+        <br /><br />
+      </li>
+      <li>
+        <strong>Testing & Validation:</strong><br /><br />
+        Include automated tests that verify your solution handles server disconnections, edge cases, and protocol validation failures.
+        Provide a test runner script and clear documentation on how to execute tests.
+        <br />
+        <br />
+      </li>
+      <li>
+        <strong>Documentation Requirements:</strong><br /><br />
+        Include a comprehensive README with:
+        <ul>
+          <li>* Architecture design explanation</li>
+          <li>* Key design decisions and rationale</li>
+          <li>* Instructions for running tests</li>
+          <li>* How your code handles edge cases</li>
+        </ul>
+        <br />
+        Comment complex sections of code for clarity.
+        <br />
+        <br />
+      </li>
+      <li>
+        <strong>Coding Environment:</strong><br /><br />
         <b class="red-168 yellow-255-text">You must use CODA tooling to develop the application.</b>
       </li>
 
       <li>
-        <strong>Mission Completion:</strong><br />
+        <strong>Mission Completion:</strong><br /><br />
         Enter the retrieved code in the form below and transmit to
         NORAD command.
       </li>
 
       <li>
-        <strong>Winners:</strong><br />
-        The first {{ site.winner_amount }} to submit the correct override code <b class="red-168 yellow-255-text">and the code is accepted by NORAD judges</b> will win.
+        <strong>Winners & Scoring:</strong><br /><br />
+        Winners are determined by <b class="red-168 yellow-255-text">code quality and correctness</b>, not just speed:
+        <br /><br />
+        <ul>
+          <li>* Code quality (architecture, test coverage, best practices) met requirements</li>
+          <li>* Correct functionality (protocol implementation + secret code shared)</li>
+          <li>* Documentation and maintainability is present</li>
+        </ul>
+        <br />
+        The first {{ site.winner_amount }} participants who meet all quality criteria and pass code review by NORAD judges will win.
+        <br /> <br />
+      </li>
+      <li>
+        <strong>Ranking:</strong><br /><br />
+        :
+        <br /><br />
+        <ul>
+          <li>* Code quality (architecture, test coverage, best practices) met requirements</li>
+          <li>* Correct functionality (protocol implementation + secret code shared)</li>
+          <li>* Documentation and maintainability is present</li>
+        </ul>
+        <br />
+        The first {{ site.winner_amount }} participants who meet all quality criteria and pass code review by NORAD judges will win.
       </li>
     </ol>
 

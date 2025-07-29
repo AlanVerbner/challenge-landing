@@ -26,11 +26,15 @@ permalink: /faq/
     <strong>Q: Who wins?</strong>
   </dt>
   <dd>
-    <strong>A:</strong> To be eligible for winning, you must meet all three conditions:
+    <strong>A:</strong> To be eligible for winning, you must meet all criteria:
     	<ul>
-        <li>* Submit the form with the correct secret code and a link to your source code (GitHub, GitLab, etc.).</li>
-        <li>* Your code must follow best practices and be well-structured (including testing coverage, documentation, security considerations, etc.)</li>
-        <li>* Be among the first {{site.winner_amount}} participants to successfully complete both requirements above.</li>
+        <li>* Submit the form with the correct secret code and a public repository link (GitHub, GitLab, etc.)</li>
+        <li>* Achieve minimum 80% test coverage with automated tests</li>
+        <li>* Follow clean architecture principles and coding standards</li>
+        <li>* Include comprehensive error handling and logging</li>
+        <li>* Provide detailed documentation and code comments</li>
+        <li>* Pass code review by NORAD senior engineers</li>
+        <li>* Be among the first {{site.winner_amount}} participants meeting all quality criteria</li>
       </ul>
   </dd>
 	<br />
@@ -38,14 +42,14 @@ permalink: /faq/
     <strong>Q: Who determines code quality and best practices?</strong>
   </dt>
   <dd>
-    <strong>A:</strong> A panel of expert judges will evaluate code quality and adherence to best practices: {{site.judges}}.
+    <strong>A:</strong> Our panel of senior NORAD engineers ({{site.judges}}) will perform comprehensive code reviews, assessing architecture quality, test coverage, security practices, and maintainability standards.
   </dd>
 	<br />
   <dt id="where-to-post-the-source-code">
     <strong>Q: Where should I post my source code?</strong>
   </dt>
   <dd>
-    <strong>A:</strong> Your source code should be published in a public GitHub repository. Since this is a simulation exercise, please do not use your real personal information and <b class="red-168 yellow-255-text">never commit secret keys or sensitive credentials</b>.
+    <strong>A:</strong> Your source code should be published in a public repository (GitHub, GitLab, or Bitbucket). Since this is a simulation exercise, please use anonymized personal information and <b class="red-168 yellow-255-text">never commit secret keys or sensitive credentials</b>. Your repository must include clear README instructions for running tests and verifying code quality.
   </dd>
 	<br />
   <dt id="budget">

@@ -26,6 +26,35 @@ permalink: /instructions/
         <br />
       </li>
       <li>
+        <strong>Session Recording Feature:</strong><br /><br />
+        Your application must include a <code>session_recording</code> feature that captures all client-server interactions.
+        <br /><br />
+
+        <strong>Recording Requirements:</strong>
+        <ul>
+          <li>* When executing with session_recording enabled, store each client-server interaction in a JSON file</li>
+          <li>* Each record must include timestamp, request data, and response data</li>
+          <li>* Recording files must be timestamped and uniquely identifiable</li>
+          <li>* Recording should be controlled via command-line flag or similar mechanism</li>
+        </ul>
+        <br />
+
+        <strong>TUI Replay Application:</strong>
+        <ul>
+          <li>* Provide a standalone TUI application for replaying session recordings</li>
+          <li>* Must support the following keybindings:
+            <ul>
+              <li>- <kbd>N</kbd> / <kbd>n</kbd> - Next step</li>
+              <li>- <kbd>P</kbd> / <kbd>p</kbd> - Previous step</li>
+              <li>- <kbd>Q</kbd> / <kbd>q</kbd> - Quit</li>
+            </ul>
+          </li>
+          <li>* Should display current step number and total steps</li>
+          <li>* Show request/response details for each step</li>
+        </ul>
+      </li>
+
+      <li>
         <strong>Coding Standards & Quality Requirements:</strong><br /><br />
         Your code must follow industry best practices including:
         <br /><br />
@@ -64,17 +93,17 @@ permalink: /instructions/
       </li>
       <li>
         <strong>Coding Environment:</strong><br /><br />
-        <b class="red-168 yellow-255-text">You must use CODA tooling to develop the application.</b>
+        You must use CODA tooling to develop the application.
       </li>
 
       <li>
         <strong>Mission Completion:</strong><br /><br />
         Enter the retrieved code in the form below and transmit to
-        NORAD command.
+        NORAD command. <b class="red-168 yellow-255-text">You will be asked for the codebase.</b>
       </li>
 
       <li>
-        <strong>Winners & Scoring:</strong><br /><br />
+        <strong>Winners:</strong><br /><br />
         Winners are determined by <b class="red-168 yellow-255-text">code quality and correctness</b>, not just speed:
         <br /><br />
         <ul>
@@ -85,18 +114,6 @@ permalink: /instructions/
         <br />
         The first {{ site.winner_amount }} participants who meet all quality criteria and pass code review by NORAD judges will win.
         <br /> <br />
-      </li>
-      <li>
-        <strong>Ranking:</strong><br /><br />
-        :
-        <br /><br />
-        <ul>
-          <li>* Code quality (architecture, test coverage, best practices) met requirements</li>
-          <li>* Correct functionality (protocol implementation + secret code shared)</li>
-          <li>* Documentation and maintainability is present</li>
-        </ul>
-        <br />
-        The first {{ site.winner_amount }} participants who meet all quality criteria and pass code review by NORAD judges will win.
       </li>
     </ol>
 

@@ -109,7 +109,6 @@ Create `src/_data/site.json`:
   "description": "MiniTel-Lite Emergency Protocol",
   "form_endpoint": "https://forms.google.com/XXX",
   "server_host": "demo.minitel-lite.xyz",
-  "server_port": 7321
 }
 ```
 

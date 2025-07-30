@@ -18,8 +18,8 @@ permalink: /faq/
     <strong>Q: How can I win the challenge?</strong>
   </dt>
   <dd>
-    <strong>A:</strong> You need to develop a tool that can connect to the server and send the correct authentication code through the provided <a href="{{site.form_endpoint}}" class="green-168 yellow-255-text">form</a>. 
-    Use your application to establish a TCP connection to <code>{{site.server_host}}:{{site.server_port}}</code> and follow the protocol specifications to retrieve the override code.
+    <strong>A:</strong> You need to develop a tool that can connect to the server and send the correct authentication code through the provided <a href="{{site.form_endpoint}}" class="green-168 yellow-255-text">form</a>.
+    Use your application to establish a TCP connection to <code>{{site.server_host}}</code> and follow the protocol specifications to retrieve the override code.
   </dd>
 	<br />
   <dt id="who-wins">

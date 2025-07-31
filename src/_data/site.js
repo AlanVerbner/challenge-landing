@@ -3,7 +3,7 @@ module.exports = {
   description: "MiniTel-Lite Emergency Protocol",
   baseUrl: process.env.NODE_ENV === "production" ? "/" : "/",
   form_endpoint:
-    "https://docs.google.com/forms/d/1X6GQ7gHcakXpTlpRh9x-NufSZNnaaRZbGvAA_SZz7RU/",
+    "https://forms.gle/2vJc1zZySFHeKRZH8",
   server_host: "IP_ADDRESS_AND_PORT_PROVIDED_OVER_SLACK",
   url: "http://minitel.ai-quests.dev",
   author: "NORAD",
